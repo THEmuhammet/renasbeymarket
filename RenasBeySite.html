@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KingWix Shop offers premium plugins and special deals exclusively for KingWix users.">
+    <title>Ticaret İşi</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffecb3, #ffab91);
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: #d32f2f;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 2;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        #clock {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+        .product {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f5f5f5;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, border 0.3s;
+            position: relative;
+            z-index: 0;
+        }
+        .product::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.05);
+            transition: opacity 0.3s;
+            z-index: -1;
+            border-radius: 15px;
+        }
+        .product:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+            background-color: #e3f2fd;
+            border: 2px solid #03a9f4;
+        }
+        .product:hover::before {
+            opacity: 0;
+        }
+        .product-info {
+            padding: 10px 0;
+        }
+        .product h2 {
+            margin: 0 0 10px;
+            font-size: 2em;
+            color: #d32f2f;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        .product p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .price {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #f44336;
+            margin: 10px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        .payment-buttons {
+            margin-top: 15px;
+        }
+        .payment-buttons a {
+            text-decoration: none;
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin-right: 15px;
+            display: inline-block;
+            font-weight: 600;
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .payment-buttons a:nth-of-type(1) {
+            background: #4caf50;
+        }
+        .payment-buttons a:nth-of-type(1):hover {
+            background: #388e3c;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .payment-buttons a:nth-of-type(2) {
+            background: #2196f3;
+        }
+        .payment-buttons a:nth-of-type(2):hover {
+            background: #1976d2;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .payment-buttons a:nth-of-type(3) {
+            background: #f44336;
+        }
+        .payment-buttons a:nth-of-type(3):hover {
+            background: #c62828;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            .product {
+                padding: 15px;
+            }
+            .product-info h2 {
+                font-size: 1.6em;
+            }
+            .price {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RenasBey Market</h1>
+        <div id="clock">Saat: 00:00:00</div>
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <div class="product-info">
+                <h2>KingWix Pluginleri</h2>
+                <p>Bu Pluginler Ful Türkçe + Antiddos</p>
+                <p class="price">100 TL</p>
+                <div class="payment-buttons">
+                    <a href="http://localhost:2435/storage/emulated/0/RenasBeySite/gogleplay.html" target="_blank">Google Play ile Öde</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-info">
+                <h2>KingWix'te Op al 1 haftalik</h2>
+                <p>Bu, Sadece KingWix'e Özel</p>
+                <p class="price">50 TL</p>
+                <div class="payment-buttons">
+                    <a href="http://localhost:2435/storage/emulated/0/RenasBeySite/gogleplay.html" target="_blank">Google Play ile Öde</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-info">
+                <h2>Force Op Dersi</h2>
+                <p>Sadece 3 tane</p>
+                <p class="price">5 TL</p>
+                <div class="payment-buttons">
+                    <a href="http://localhost:2435/storage/emulated/0/RenasBeySite/gogleplay.html" target="_blank">Google Play ile Öde</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-info">
+                <h2>TheLostTeam Hack</h2>
+                <p>Sunucuları Sike Bilirsin</p>
+                <p class="price">10 TL</p>
+                <div class="payment-buttons">
+                    <a href="http://localhost:2435/storage/emulated/0/RenasBeySite/gogleplay.html" target="_blank">Google Play ile Öde</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `Saat: ${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); // İlk başta hemen güncelle
+    </script>
+</body>
+</html>
